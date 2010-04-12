@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "=== Active Connection ==="
+netstat -a | grep '^tcp' | grep ESTABLISHED
+echo ""
+echo "=== Listening ==="
+netstat -a | grep '^tcp' | grep LISTEN
+
